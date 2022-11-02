@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from "./styles.css";
+import HangmanDrawing from "./HangmanDrawing";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HangmanDrawing></HangmanDrawing>
+
+      <div id="hangman-container">
+        <div
+          style={{
+            border: "2px solid black",
+            width: "10rem",
+            margin: "5rem auto",
+          }}
+        ></div>
+        <div
+          style={{
+            border: "2px solid black",
+            height: "10rem",
+          }}
+        ></div>
+      </div>
+    </>
   );
 }
 
